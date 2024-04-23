@@ -1,0 +1,27 @@
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('https://cdn.pixabay.com/photo/2018/03/06/22/57/portrait-3204843_1280.jpg');
+  min-height: 100%;
+}
+
+img {
+  transform: scale(var(--escala, 1));
+  transition: transform 0.25s;
+    filter: grayscale(100%);
+  }
+
+.contenedor:hover img {transform:scale(1.05); filter:grayscale(0%)}
+.contenedor {overflow:hidden;}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
